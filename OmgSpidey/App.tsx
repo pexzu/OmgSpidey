@@ -7,7 +7,7 @@ export default class App extends React.Component {
   render() {
     return (
       <SpideyContainer>
-        <Text>This is awesome</Text>
+        <Text>Testing after removing unwanted nodes</Text>
         <Text>Changes you make will automatically reload.</Text>
         <Text>Shake your phone to open the developer menu.</Text>
       </SpideyContainer>
