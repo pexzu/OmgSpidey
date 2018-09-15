@@ -2,19 +2,20 @@ import React from "react";
 import { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import glamorous, { ThemeProvider } from "glamorous-native";
+import GameView from "./Game/GameView";
+import { StatusBar } from "react-native";
 
 export default class App extends React.Component {
   render() {
     return (
-      <SpideyContainer>
-        <Text>Testing after removing unwanted nodes</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </SpideyContainer>
+      <AppContainer>
+        <StatusBar hidden={true} />
+        <GameView />
+      </AppContainer>
     );
   }
 }
-const SpideyContainer = glamorous.view({
+const AppContainer = glamorous.view({
   flex: 1,
   backgroundColor: "blue",
   alignItems: "center",

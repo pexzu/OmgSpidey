@@ -1,5 +1,6 @@
 import React from "react";
 import glamorous from "glamorous-native";
+import { View, Text, StyleSheet } from "react-native";
 
 interface SpiderProps {}
 
@@ -15,4 +16,8 @@ export default class Spider extends React.Component<SpiderProps, SpiderState> {
     return <Spidey />;
   }
 }
-const Spidey = glamorous.view({});
+const Spidey = glamorous.view({
+  height: "6%",
+  backgroundColor: "black",
+  width: "10%",
+});
