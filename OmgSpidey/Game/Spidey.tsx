@@ -2,7 +2,9 @@ import React from "react";
 import glamorous from "glamorous-native";
 import { View, Text, StyleSheet } from "react-native";
 
-interface SpiderProps {}
+interface SpiderProps {
+  heightOfSpider: number;
+}
 
 interface SpiderState {}
 
